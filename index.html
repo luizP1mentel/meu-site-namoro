@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2.11 Anos ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .tela-inicial, .conteudo {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .tela-inicial {
+            background-color: #1a1a1a;
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Força visibilidade */
+        }
+        .tela-inicial h1 {
+            font-size: 2em;
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+        .botao {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .botao:hover {
+            background-color: #ff1f4b;
+        }
+        .section {
+            padding: 40px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            padding: 30px 20px;
+            font-size: 0.9em;
+            color: #bbb;
+            margin-bottom: 40px;
+        }
+        /* Corações flutuando por toda a tela */
+        .heart {
+            position: fixed;   /* Mudança para fixed */
+            color: #ff4d6d;
+            font-size: 20px;
+            animation: subir 6s linear infinite;
+            opacity: 0.7;
+            user-select: none;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        @keyframes subir {
+            0% { transform: translateY(100vh) scale(1); opacity: 1; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+        audio { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Tela inicial -->
+    <div class="tela-inicial" id="inicio" style="display: flex;">
+        <h1>💖 Quase 3 anos juntos ❤️</h1>
+        <button class="botao" onclick="iniciarSite()">Abrir</button>
+    </div>
+
+    <!-- Conteúdo escondido -->
+    <div class="conteudo" id="conteudo" style="display:none;">
+        <audio id="musica" loop muted>
+            <source src="musica.mp3" type="audio/mpeg" />
+            Seu navegador não suporta áudio.
+        </audio>
+
+        <header>
+            <h1>Quase 3 anos juntos ❤️</h1>
+            <p>Hoje celebramos 2 anos e 11 meses da nossa linda história, quase completando 3 anos de amor e mais amor.</p>
+        </header>
+
+        <div class="section">
+            <p>❤️ Desde o primeiro dia, você iluminou minha vida e trouxe cores que eu nem sabia que existiam e todas elas moram no seu olhar! ❤️</p>
+            <img src="foto1.jpg" alt="Nossa foto especial" />
+        </div>
+
+        <div class="section">
+            <p>❤️ Cada segundo com você é único! E guardo para sempre na minha memória com muito carinho. ❤️</p>
+            <img src="foto2.jpg" alt="Lembrança especial" />
+        </div>
+
+        <div class="section">
+            <p>❤️Obrigado por ser verdadeira comigo, e me fazer ver que posso ser amado!.❤️</p>
+            <img src="foto3.jpg" alt="Você é incrível" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ Com você, aprendi o verdadeiro significado de felicidade e parceria. Cada desafio ficou mais leve ao seu lado. ❤️</p>
+            <img src="foto4.jpg" alt="Momentos felizes juntos" />
+        </div>
+
+        <div class="section">
+            <p>❤️ Que venham muitos anos, muitos sonhos e muito amor para a gente construir e compartilhar. Você é minha melhor escolha. ❤️</p>
+            <img src="foto5.jpg" alt="Nosso futuro juntos" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ Você é a razão do meu sorriso todos os dias, o meu porto seguro e minha inspiração. Me da forças pra acordar com um sorriso❤️</p>
+            <img src="foto6.jpg" alt="Sorriso e amor" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ A cada dia que passa, nosso amor se fortalece e me sinto mais completo ao seu lado, É doido pensar que a vida muda de uma hora pra outra e uma princesa vira dona de mim❤️</p>
+            <img src="foto7.jpg" alt="Amor crescente" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ Obrigado por todos os momentos incríveis que vivemos e pelos que ainda vamos viver. ❤️</p>
+            <img src="foto8.jpg" alt="Momentos incríveis" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ Você é meu sonho realizado e o motivo pelo qual acredito no amor verdadeiro. ❤️</p>
+            <img src="foto9.jpg" alt="Sonho realizado" />
+        </div>
+        
+        <div class="section">
+            <p>❤️ Para sempre, juntos, construindo uma história linda e cheia de amor. Eu te amo! ❤️</p>
+            <img src="foto10.jpg" alt="Juntos para sempre" />
+        </div>
+
+        <footer>
+            Com todo meu amor ❤️ — Bocó.
+        </footer>
+    </div>
+
+    <script>
+        function iniciarSite() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("conteudo").style.display = "flex";
+
+            const musica = document.getElementById("musica");
+            musica.muted = false;  // tira o mute para o som tocar
+            musica.play().catch(() => {
+                alert("Toque o botão novamente para ouvir a música.");
+            });
+
+            criarCoracoes();
+        }
+
+        function criarCoracoes() {
+            setInterval(() => {
+                const coracao = document.createElement("div");
+                coracao.textContent = "❤️";
+                coracao.classList.add("heart");
+                coracao.style.left = Math.random() * 100 + "vw";
+                coracao.style.fontSize = (Math.random() * 20 + 20) + "px";
+                coracao.style.animationDuration = (Math.random() * 3 + 4) + "s";
+                document.body.appendChild(coracao);
+                setTimeout(() => coracao.remove(), 6000);
+            }, 500);
+        }
+    </script>
+
+</body>
+</html>
